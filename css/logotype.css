@@ -1,0 +1,20 @@
+/* logo iniciales*/
+
+.logo-iniciales {
+    background-color: #ffffff; /* Color llamativo */
+    color: #010002;           /* Color del texto (el de tu header) */
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;       /* Lo hace circular */
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo-iniciales:hover {
+    transform: scale(1.1);    /* Pequeño efecto al pasar el mouse */
+}

@@ -1,0 +1,8 @@
+/* Grid de Proyectos y Mascotas */
+.grid-proyectos, .galeria-grid {
+    display: grid;
+    /* Ajusta el tamaño mínimo para que las tarjetas no sean tan anchas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}

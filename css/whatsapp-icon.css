@@ -1,0 +1,23 @@
+/* Icono Whatsapp */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fcfcfc;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon img {
+    width: 30px; /* Tamaño logo */
+    height: 30px;
+    display: block;
+    box-shadow: none; /* Evita sombras extrañas en el icono */
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}

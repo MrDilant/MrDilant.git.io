@@ -1,0 +1,29 @@
+/* Tarjetas de Mascotas (Estructura Vertical) */
+article {
+    background-color: #e6e5e5cb;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de arriba hacia abajo */
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+article img {
+    width: 100%;
+    height: auto;       /* Cambiado a auto para que no corte la foto */
+    max-height: 250px;  /* Límite opcional para que no sean gigantes */
+    object-fit: contain; /* Asegura que la foto se vea completa sin cortes */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+article h2, article h3 {
+    margin: 10px 0 5px 0;
+}

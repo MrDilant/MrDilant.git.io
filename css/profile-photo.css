@@ -1,0 +1,14 @@
+/* Foto de perfil */
+.foto-perfil {
+    width: 140px;
+    height: auto;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.foto-perfil:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
