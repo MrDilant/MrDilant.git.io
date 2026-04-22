@@ -1,0 +1,15 @@
+/* Móviles */
+@media (max-width: 600px) {
+  .grid-proyectos,
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .grid-proyectos,
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

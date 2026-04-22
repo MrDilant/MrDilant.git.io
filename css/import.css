@@ -1,9 +1,21 @@
-@import "general.css";
-@import "header-nav.css";
-@import "sections.css";
-@import "pets-cards.css";
-@import "grid-proyects-pets.css";
-@import "contact-buttoms.css";
-@import "whatsapp-icon.css";
-@import "logotype.css";
-@import "profile-photo.css";
+/* Variables globales */
+:root {
+    --color-logo-fondo: #ffffff;
+    --color-logo-texto: #010002;
+    --color-header: #000000;
+    --color-texto: #333;
+    --color-link: #ebe8e8;
+    --color-hover: #13cfec;
+    --color-card: #e6e5e5cb;
+    --color-fondo: #f4f4f4;
+    --color-borde: #ccc;
+    --color-boton: #000000;
+    --color-texto-blanco: #ffffff;
+    --fuente-principal: Arial, sans-serif;
+}
+
+/* Tamaño base */
+html {
+    font-size: 16px;
+}
+

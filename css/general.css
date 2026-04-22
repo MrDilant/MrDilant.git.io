@@ -1,8 +1,26 @@
-/* Generales */
+/* Variables globales */
+:root {
+    --color-header: #000000;
+    --color-texto-blanco: #ffffff;
+    --color-link: #ebe8e8;
+    --color-hover: #13cfec;
+    --color-card: #e6e5e5cb;
+    --color-fondo: #f4f4f4;
+    --color-texto: #333;
+    --color-borde: #ccc;
+    --color-boton: #000000;
+    --fuente-principal: Arial, sans-serif;
+}
+
+/* Base */
+html {
+    font-size: 16px;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--fuente-principal);
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }

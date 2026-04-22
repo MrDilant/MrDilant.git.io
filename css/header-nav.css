@@ -1,8 +1,8 @@
 /* Header y Navegacion */
 header {
     background-color: #000000;
-    color: white;
-    padding: 15px 40px;
+    color: #ffffff;
+    padding: 0.9rem 2.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,15 +18,15 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 1.2rem;
 }
 
 nav a {
-    color: #ebe8e8;
+    color: var(--color-link);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #13cfec;
+    color: var(--color-hover);
 }

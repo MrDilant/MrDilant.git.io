@@ -1,24 +1,37 @@
-/* Contacto y Botones */
+/* Variables globales */
+:root {
+    --color-borde: #ccc;
+    --color-boton: #000000;
+    --color-hover: #13cfec;
+    --color-texto-blanco: #ffffff;
+}
+
+/* Formulario */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.6rem;
 }
 
-input, button {
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+/* Inputs y botones (reglas agrupadas) */
+.input-base {
+    padding: 0.75rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--color-borde);
 }
 
-button {
-    background-color: #000000;
-    color: white;
+/* Botón */
+.button-base {
+    padding: 0.75rem;
+    border-radius: 0.3rem;
+    background-color: var(--color-boton);
+    color: var(--color-texto-blanco);
     font-weight: bold;
     cursor: pointer;
     border: none;
 }
 
-button:hover {
-    background-color: #13cfec;
+/* Hover */
+.button-base:hover {
+    background-color: var(--color-hover);
 }
