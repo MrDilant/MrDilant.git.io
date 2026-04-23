@@ -1,37 +1,71 @@
 /* Tarjetas de Mascotas (Estructura Vertical) */
 article {
-    background-color: var(--color-card);
-    padding: 0.9rem;
-    border-radius: 3rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Alinea los elementos de arriba hacia abajo */
-    align-items: center;
+    background-color: var(--color-card); 
+    /* Color de fondo de la tarjeta */
+
+    padding: 0.9rem; 
+    /* Espacio interno */
+
+    border-radius: 3rem; 
+    /* Bordes MUY redondeados (estilo tipo burbuja) */
+
+    text-align: center; 
+    /* Centra el texto */
+
+    display: flex; 
+    /* Activa flexbox */
+
+    flex-direction: column; 
+    /* Organiza los elementos en vertical (arriba → abajo) */
+
+    align-items: center; 
+    /* Centra horizontalmente dentro de la tarjeta */
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animaciones suaves */
 }
 
+/* Efecto hover en la tarjeta */
 article:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0.6rem 1.5rem rgba(0,0,0,0.2);
+    transform: scale(1.02); 
+    /* Pequeño zoom */
+
+    box-shadow: 0 0.6rem 1.5rem rgba(0,0,0,0.2); 
+    /* Sombra más fuerte */
 }
 
+/* Imagen dentro de la tarjeta */
 article img {
-    max-width: 100%;
-    height: auto;       /* Cambiado a auto para que no corte la foto */
-    max-height: 250px;  /* Límite opcional para que no sean gigantes */
-    object-fit: contain; /* Asegura que la foto se vea completa sin cortes */
-    border-radius: 0.6rem;
-    margin-bottom: 0.6rem;
+    max-width: 100%; 
+    /* No se sale del contenedor */
+
+    height: auto;       
+    /* Mantiene proporción */
+
+    max-height: 250px;  
+    /* Limita el tamaño máximo */
+
+    object-fit: contain; 
+    /* Muestra la imagen completa sin recortarla */
+
+    border-radius: 0.6rem; 
+    /* Bordes redondeados */
+
+    margin-bottom: 0.6rem; 
+    /* Espacio debajo de la imagen */
 }
 
+/* Título principal */
 article h2 {
     font-size: 1.5rem;
 }
 
+/* Subtítulo */
 article h3 {
     font-size: 1.2rem;
 }
 
+/* Párrafo */
 article p {
     font-size: 1rem;
 }

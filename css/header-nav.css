@@ -1,32 +1,63 @@
 /* Header y Navegacion */
 header {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 0.9rem 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #000000; 
+    /* Fondo negro del encabezado */
+
+    color: #ffffff; 
+    /* Color del texto (blanco) */
+
+    padding: 0.9rem 2.5rem; 
+    /* Espaciado interno (arriba/abajo | lados) */
+
+    display: flex; 
+    /* Activa flexbox */
+
+    justify-content: space-between; 
+    /* Separa elementos: uno a la izquierda y otro a la derecha */
+
+    align-items: center; 
+    /* Centra verticalmente los elementos */
 }
 
+/* Título dentro del header */
 header h1 {
-    margin: 0;
-    font-size: 1.5rem;
+    margin: 0; 
+    /* Quita el margen por defecto */
+
+    font-size: 1.5rem; 
+    /* Tamaño del texto */
 }
 
+/* Lista del menú */
 nav ul {
-    list-style: none;
+    list-style: none; 
+    /* Quita los puntos de la lista */
+
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 1.2rem;
+    /* Elimina espacios por defecto */
+
+    display: flex; 
+    /* Coloca los elementos en fila */
+
+    gap: 1.2rem; 
+    /* Espacio entre cada enlace */
 }
 
+/* Enlaces del menú */
 nav a {
-    color: var(--color-link);
-    text-decoration: none;
-    transition: color 0.3s;
+    color: var(--color-link); 
+    /* Color usando variable */
+
+    text-decoration: none; 
+    /* Quita el subrayado */
+
+    transition: color 0.3s; 
+    /* Animación suave al cambiar color */
 }
 
+/* Efecto hover en enlaces */
 nav a:hover {
-    color: var(--color-hover);
+    color: var(--color-hover); 
+    /* Cambia de color al pasar el mouse */
 }

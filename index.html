@@ -2,9 +2,12 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilant A. Murillo Mejía</title>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8"> <!-- Permite usar caracteres especiales (tildes, ñ, etc) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsive -->
+    <title>Dilant A. Murillo Mejía</title> <!-- Título de la pestaña -->
+
+    <!-- Archivos CSS para estilos -->
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/header-nav.css">
     <link rel="stylesheet" href="../css/sections.css">
@@ -19,73 +22,105 @@
 
 <body>
 
+    <!-- Encabezado de la página -->
     <header>
-    <div class="logo-iniciales">
-        <span>DM</span>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="pets.html">Mascotas</a></li>
-        </ul>
-    </nav>
+        <div class="logo-iniciales">
+            <span>DM</span> <!-- Iniciales como logo -->
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li> <!-- Enlace a sección -->
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="pets.html">Mascotas</a></li> <!-- Página externa -->
+            </ul>
+        </nav>
     </header>
 
+    <!-- Sección principal con nombre -->
     <section id="Dilant-Murillo">
         <h2>Dilant Antonio Murillo Mejía</h2>
     </section>
 
+    <!-- Sección sobre mí -->
     <section id="sobre-mi">
-        <img src="../img/fotoDilant.jpeg" alt="Foto de Dilant" class="foto-perfil">
+        <img src="../img/fotoDilant.jpeg" alt="Foto de Dilant" class="foto-perfil"> <!-- Imagen de perfil -->
         <h2>Sobre mí</h2>
-        <p>Estudiante con interés en el desarrollo de software y la informática, enfocado en comprender el funcionamiento de los sistemas y en crear soluciones prácticas mediante la tecnología.
-            </p>
-        
- <button onclick="cambiarTexto()">Cambiar texto</button>
-<button onclick="toggleInfo()">Mostrar/Ocultar info</button>
+
+        <!-- Descripción personal -->
+        <p>
+            Estudiante con interés en el desarrollo de software y la informática, enfocado en comprender el
+            funcionamiento de los sistemas y en crear soluciones prácticas mediante la tecnología.
+        </p>
+
+        <!-- Botones que ejecutan funciones JS -->
+        <button onclick="cambiarTexto()">Cambiar texto</button> <!-- Llama función JS -->
+        <button onclick="toggleInfo()">Mostrar/Ocultar info</button> <!-- Llama función JS -->
     </section>
 
+    <!-- Sección de proyectos -->
     <section id="proyectos">
-    <h2>Proyectos</h2>
-    <div class="grid-proyectos">
+        <h2>Proyectos</h2>
 
-        <article>
-            <h3>Portafolio personal</h3>
-            <p>Página web donde presento mi perfil, habilidades y contacto. Desarrollada con HTML, CSS y JavaScript.</p>
-            
-        </article>
-            
-        <article>
-            <h3>Inventario de tareas (Python)</h3>
-            <p>Aplicación en Python para gestionar tareas, permitiendo agregar, eliminar y visualizar actividades.</p>
-            
-        </article>
+        <!-- Contenedor en grid -->
+        <div class="grid-proyectos">
 
-        <article>
-            <h3>Interacciones con JavaScript</h3>
-            <p>Práctica de funciones dinámicas como cambiar texto y mostrar/ocultar contenido en una página web.</p>
-            
-        </article>
+            <!-- Proyecto 1 -->
+            <article>
+                <h3>Portafolio personal</h3>
+                <p>
+                    Página web donde presento mi perfil, habilidades y contacto. Desarrollada con HTML, CSS y JavaScript.
+                </p>
+            </article>
 
-    </div>
-</section>
+            <!-- Proyecto 2 -->
+            <article>
+                <h3>Inventario de tareas (Python)</h3>
+                <p>
+                    Aplicación en Python para gestionar tareas, permitiendo agregar, eliminar y visualizar actividades.
+                </p>
+            </article>
 
-   <section id="contacto">
-    <h2>Contacto</h2>
-    <form id="form-contacto">
-        <input type="text" placeholder="Tu nombre" required>
-        <input type="email" placeholder="Tu correo" required>
-        <button type="submit">Enviar</button>
-    </form>
+            <!-- Proyecto 3 -->
+            <article>
+                <h3>Interacciones con JavaScript</h3>
+                <p>
+                    Práctica de funciones dinámicas como cambiar texto y mostrar/ocultar contenido en una página web.
+                </p>
+            </article>
+
+        </div>
     </section>
 
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <!-- Formulario -->
+        <form id="form-contacto">
+            <!-- Campo nombre -->
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+            <!-- Campo correo -->
+            <input type="email" id="correo" placeholder="Tu correo" required>
+
+            <!-- Campo comentarios -->
+            <textarea id="comentarios" placeholder="Tus comentarios" rows="5" required></textarea>
+
+            <!-- Botón que envía el formulario -->
+            <button type="submit">Enviar a WhatsApp</button>
+        </form>
+    </section>
+
+    <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/573147299598" target="_blank" class="whatsapp-icon">
         <img src="../img/logo-whatsapp.png" alt="WhatsApp">
     </a>
 
+    <!-- Enlace a tu archivo JavaScript -->
     <script src="../javascript/script.js"></script>
-</body>
 
+</body>
 </html>

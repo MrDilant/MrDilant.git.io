@@ -1,6 +1,12 @@
+/* GRID DE PROYECTOS Y DE GALERIA DE MASCOTAS */
 .grid-proyectos,
 .galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    display: grid; 
+    /* Activa CSS Grid */
+
+    grid-template-columns: repeat(3, 1fr); 
+    /* Crea 3 columnas del mismo tamaño */
+
+    gap: 1.5rem; 
+    /* Espacio entre filas y columnas */
 }

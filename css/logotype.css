@@ -1,20 +1,43 @@
 /* logo iniciales*/
 
 .logo-iniciales {
-    background-color: #fffdfd;
-    color: #000000;
+    background-color: #fffdfd; 
+    /* Color de fondo del logo (casi blanco) */
+
+    color: #000000; 
+    /* Color del texto (las iniciales) */
+
     width: 2.8rem;
     height: 2.8rem;
+    /* Tamaño del círculo */
+
     display: flex;
+    /* Activa flexbox */
+
     align-items: center;
+    /* Centra verticalmente el contenido */
+
     justify-content: center;
+    /* Centra horizontalmente el contenido */
+
     border-radius: 50%;
+    /* Lo convierte en un círculo perfecto */
+
     font-weight: bold;
+    /* Hace las letras más gruesas */
+
     font-size: 1.2rem;
+    /* Tamaño de las iniciales */
+
     cursor: pointer;
+    /* Cambia el cursor al pasar (indica que es interactivo) */
+
     transition: transform 0.3s ease;
+    /* Animación suave al hacer hover */
 }
 
+/* Efecto al pasar el mouse */
 .logo-iniciales:hover {
     transform: scale(1.1);
+    /* Hace un pequeño zoom */
 }

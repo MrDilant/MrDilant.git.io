@@ -1,27 +1,46 @@
 /* Secciones */
 section {
-    padding: 1.2rem;
-    margin: 1.2rem;
-    background-color: var(--color-texto-blanco);
-    border-radius: 0.6rem;
-    box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.1);
+    padding: 1.2rem; 
+    /* Espacio interno dentro de cada sección */
+
+    margin: 1.2rem; 
+    /* Espacio externo entre secciones */
+
+    background-color: var(--color-texto-blanco); 
+    /* Fondo blanco usando variable */
+
+    border-radius: 0.6rem; 
+    /* Bordes redondeados */
+
+    box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.1); 
+    /* Sombra suave para efecto de tarjeta */
 }
 
+/* Limpia floats dentro de la sección sobre mí */
 #sobre-mi::after {
     content: "";
     display: table;
     clear: both;
+    /* Evita que elementos flotantes rompan el diseño */
 }
 
+/* Estilo del párrafo en "Sobre mí" */
 #sobre-mi p {
     max-width: 600px; 
+    /* Limita el ancho del texto para mejor lectura */
+
     font-size: 20px;
+    /* Tamaño de letra */
 }
 
+/* Título "Sobre mí" */
 #sobre-mi h2 {
     font-size: 35px;
+    /* Hace el título más grande */
 }
 
+/* Título principal con nombre */
 #Dilant-Murillo h2 {
     font-size: 35px;
+    /* Mismo tamaño que el de "Sobre mí" */
 }

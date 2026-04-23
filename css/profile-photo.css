@@ -1,15 +1,32 @@
 /* Foto de perfil */
 .foto-perfil {
-    width: 8.75rem;
-    height: auto;
-    float: right;
-    margin-left: 1.2rem;
-    margin-bottom: 0.6rem;
-    border-radius: 0.6rem;
+    width: 8.75rem; 
+    /* Ancho de la imagen (rem = relativo al tamaño base del texto) */
+
+    height: auto; 
+    /* Mantiene la proporción original de la imagen */
+
+    float: right; 
+    /* Hace que la imagen se coloque a la derecha y el texto fluya alrededor */
+
+    margin-left: 1.2rem; 
+    /* Espacio entre la imagen y el texto a la izquierda */
+
+    margin-bottom: 0.6rem; 
+    /* Espacio inferior */
+
+    border-radius: 0.6rem; 
+    /* Bordes redondeados */
 }
 
+/* Efecto al pasar el mouse */
 .foto-perfil:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0.6rem 1.5rem rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
+    transform: scale(1.05); 
+    /* Hace un pequeño zoom */
+
+    box-shadow: 0 0.6rem 1.5rem rgba(0,0,0,0.2); 
+    /* Sombra más intensa al hacer hover */
+
+    transition: transform 0.3s ease; 
+    /* Animación suave del zoom */
 }
