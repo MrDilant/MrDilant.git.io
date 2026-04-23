@@ -12,3 +12,16 @@ section {
     display: table;
     clear: both;
 }
+
+#sobre-mi p {
+    max-width: 600px; 
+    font-size: 20px;
+}
+
+#sobre-mi h2 {
+    font-size: 35px;
+}
+
+#Dilant-Murillo h2 {
+    font-size: 35px;
+}
