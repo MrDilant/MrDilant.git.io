@@ -25,16 +25,22 @@
     <!-- Encabezado de la página -->
     <header>
         <div class="logo-iniciales">
-            <span>DM</span> <!-- Iniciales como logo -->
+            <span>DM</span>
         </div>
 
-        <!-- Menú de navegación -->
+        <!-- Checkbox oculto -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- Botón hamburguesa -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <!-- Menú -->
         <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li> <!-- Enlace a sección -->
+            <ul class="menu">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a href="pets.html">Mascotas</a></li> <!-- Página externa -->
+                <li><a href="pets.html">Mascotas</a></li>
             </ul>
         </nav>
     </header>
@@ -71,7 +77,8 @@
             <article>
                 <h3>Portafolio personal</h3>
                 <p>
-                    Página web donde presento mi perfil, habilidades y contacto. Desarrollada con HTML, CSS y JavaScript.
+                    Página web donde presento mi perfil, habilidades y contacto. Desarrollada con HTML, CSS y
+                    JavaScript.
                 </p>
             </article>
 
@@ -110,7 +117,7 @@
             <textarea id="comentarios" placeholder="Tus comentarios" rows="5" required></textarea>
 
             <!-- Botón que envía el formulario -->
-            <button type="submit">Enviar a WhatsApp</button>
+            <button type="submit">Enviar</button>
         </form>
     </section>
 
@@ -123,4 +130,5 @@
     <script src="../javascript/script.js"></script>
 
 </body>
+
 </html>

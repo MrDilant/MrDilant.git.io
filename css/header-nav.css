@@ -1,63 +1,123 @@
 /* Header y Navegacion */
 header {
-    background-color: #000000; 
+    background-color: #000000;
     /* Fondo negro del encabezado */
 
-    color: #ffffff; 
+    color: #ffffff;
     /* Color del texto (blanco) */
 
-    padding: 0.9rem 2.5rem; 
+    padding: 0.9rem 2.5rem;
     /* Espaciado interno (arriba/abajo | lados) */
 
-    display: flex; 
+    display: flex;
     /* Activa flexbox */
 
-    justify-content: space-between; 
+    justify-content: space-between;
     /* Separa elementos: uno a la izquierda y otro a la derecha */
 
-    align-items: center; 
+    align-items: center;
     /* Centra verticalmente los elementos */
 }
 
 /* Título dentro del header */
 header h1 {
-    margin: 0; 
+    margin: 0;
     /* Quita el margen por defecto */
 
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     /* Tamaño del texto */
 }
 
 /* Lista del menú */
 nav ul {
-    list-style: none; 
+    list-style: none;
     /* Quita los puntos de la lista */
 
     margin: 0;
     padding: 0;
     /* Elimina espacios por defecto */
 
-    display: flex; 
+    display: flex;
     /* Coloca los elementos en fila */
 
-    gap: 1.2rem; 
+    gap: 1.2rem;
     /* Espacio entre cada enlace */
 }
 
 /* Enlaces del menú */
 nav a {
-    color: var(--color-link); 
+    color: var(--color-link);
     /* Color usando variable */
 
-    text-decoration: none; 
+    text-decoration: none;
     /* Quita el subrayado */
 
-    transition: color 0.3s; 
+    transition: color 0.3s;
     /* Animación suave al cambiar color */
 }
 
 /* Efecto hover en enlaces */
 nav a:hover {
-    color: var(--color-hover); 
+    color: var(--color-hover);
     /* Cambia de color al pasar el mouse */
+}
+
+/* Asegura posicionamiento */
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menú normal (desktop) */
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* Icono hamburguesa */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Ocultar checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* MODO MOBILE */
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: black;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 10px 0;
+    }
+
+    .menu li {
+        padding: 10px 0;
+    }
+
+    /* ACTIVAR MENÚ */
+    #menu-toggle:checked ~ nav .menu {
+        display: flex;
+    }
 }
