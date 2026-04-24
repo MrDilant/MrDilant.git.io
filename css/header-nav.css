@@ -9,7 +9,7 @@ header {
     align-items: center;
 
     position: relative;
-    z-index: 1000; /* 🔥 para que el menú quede encima */
+    z-index: 1000; /* para que el menú quede encima */
 }
 
 /* ===== MENÚ DESKTOP ===== */
@@ -43,4 +43,44 @@ nav a:hover {
 /* Checkbox oculto */
 #menu-toggle {
     display: none;
+}
+
+/*Boton volver al portafolio*/
+.btn-volver {
+    color: #fff !important;
+    background-color: #535353;
+    padding: 6px 15px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 10px solid #000000;
+    transition: all 0.2s ease;
+}
+
+.btn-volver:hover {
+    background-color: #343434;
+    transform: translateY(-5px);
+}
+
+
+/* Convertir los enlaces del menú en botones */
+header nav a {
+    display: inline-block;          /* Permite aplicar padding y forma */
+    padding: 6px 12px;              /* Espaciado interno */
+    border: 1px solid #ffffff;         /* Borde del botón */
+    border-radius: 6px;             /* Bordes redondeados */
+    background-color: #494848;  /* Fondo transparente */
+    
+    color: var(--color-link);       /* Mantiene tu color actual */
+    transition: all 0.2s ease;      /* Animación suave */
+}
+
+/* Efecto al pasar el mouse */
+header nav a:hover {
+    background-color: #7b7979;         /* Fondo al hacer hover */
+    border-color: #888;             /* Cambio de borde */
+    color: #fff;                    /* Texto más visible */
 }
