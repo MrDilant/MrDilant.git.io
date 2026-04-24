@@ -3,14 +3,17 @@
     position: fixed; 
     /* Hace que el icono se quede fijo en la pantalla aunque hagas scroll */
 
-    bottom: 1.2rem; 
-    right: 1.2rem; 
+    bottom: 3rem; 
+    right: 3rem; 
     /* Lo posiciona en la esquina inferior derecha */
 
-    background-color: var(--color-texto-blanco); 
+    /*Tamaño de logo*/
+    font-size: 1.5rem;
+
+    background-color: #40ea02; 
     /* Color de fondo (usa una variable CSS que definiste) */
 
-    padding: 0.75rem; 
+    padding: 1rem; 
     /* Espacio interno alrededor del icono */
 
     border-radius: 50%; 
@@ -26,17 +29,6 @@
     /* Animación suave cuando cambia de tamaño */
 }
 
-/* Imagen dentro del botón */
-.whatsapp-icon img {
-    width: 1.9rem; /* Tamaño del logo */
-    height: 1.9rem;
-
-    display: block; 
-    /* Evita espacios raros debajo de la imagen */
-
-    box-shadow: none; 
-    /* Evita sombras adicionales en la imagen */
-}
 
 /* Efecto al pasar el mouse */
 .whatsapp-icon:hover {

@@ -1,12 +1,14 @@
-/* GRID DE PROYECTOS Y DE GALERIA DE MASCOTAS */
+/* GRID DE PROYECTOS Y MASCOTAS */
 .grid-proyectos,
 .galeria-grid {
-    display: grid; 
-    /* Activa CSS Grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
 
-    grid-template-columns: repeat(3, 1fr); 
-    /* Crea 3 columnas del mismo tamaño */
-
-    gap: 1.5rem; 
-    /* Espacio entre filas y columnas */
+/* Evita que las cards se rompan */
+.grid-proyectos article,
+.galeria-grid article {
+    width: 100%;
+    box-sizing: border-box;
 }

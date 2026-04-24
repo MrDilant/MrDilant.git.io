@@ -1,0 +1,28 @@
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Links */
+.footer .redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .redes a {
+    color: var(--color-link);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .redes a:hover {
+    color: var(--color-hover);
+}
